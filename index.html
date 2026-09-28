@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="MD. Fahim Islam — Frontend Developer Portfolio"
+    />
+
+    <title>MD. Fahim Islam | Frontend Developer</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+       HEADER / NAVBAR
+  ========================== -->
+    <header class="header" id="header">
+      <nav class="navbar container">
+        <a href="#home" class="logo"> FAHIM<span>.</span> </a>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#contact" class="nav-link">Contact</a>
+
+          <button
+            class="nav-close"
+            id="nav-close"
+            aria-label="Close navigation"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="Open navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =========================
+         HOME
+    ========================== -->
+      <section class="hero section" id="home">
+        <div class="hero-grid"></div>
+
+        <div class="container hero-container">
+          <div class="hero-content reveal">
+            <p class="hero-label">
+              <span></span>
+              Available for opportunities
+            </p>
+
+            <img
+              class="hero-photo"
+              src="images/profile.png"
+              alt="Portrait of MD. Fahim Islam"
+            />
+
+            <p class="hero-description">
+              I'm <strong>MD. Fahim Islam</strong>, a Frontend Developer focused
+              on building responsive, scalable, and engaging web experiences
+              with clean UI and modern development practices.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                View My Work
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+
+              <a href="Portfolio.pdf" class="btn btn-primary">
+                Portfolio
+                <i class="fa-solid fa-file"></i>
+              </a>
+            </div>
+
+            <div class="hero-socials">
+              <a
+                href="https://github.com/fahimnow"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/fahimnow/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+
+              <a href="mailto:fahimislam222@gmail.com" aria-label="Email">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="hero-card">
+              <div class="hero-card-top">
+                <div class="window-controls">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <span class="code-label">developer.js</span>
+              </div>
+
+              <div class="code-content">
+                <p>
+                  <span class="code-purple">const</span>
+                  developer =
+                </p>
+
+                <p class="indent">{</p>
+
+                <p class="indent-2">
+                  name:
+                  <span class="code-green"> "Fahim Islam" </span>,
+                </p>
+
+                <p class="indent-2">
+                  role:
+                  <span class="code-green"> "Frontend Developer" </span>,
+                </p>
+
+                <p class="indent-2">skills: [</p>
+
+                <p class="indent-3">
+                  <span class="code-orange"> "HTML" </span>,
+                  <span class="code-orange"> "CSS" </span>,
+                </p>
+
+                <p class="indent-3">
+                  <span class="code-orange"> "JavaScript" </span>
+                </p>
+
+                <p class="indent-2">],</p>
+
+                <p class="indent-2">
+                  passion:
+                  <span class="code-green"> "Building" </span>
+                </p>
+
+                <p class="indent-2">
+                  mindset:
+                  <span class="code-green"> "Learn & Improve" </span>
+                </p>
+
+                <p class="indent">};</p>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-one">
+              <i class="fa-solid fa-code"></i>
+              Clean Code
+            </div>
+
+            <div class="floating-badge badge-two">
+              <i class="fa-solid fa-mobile-screen"></i>
+              Responsive
+            </div>
+          </div>
+        </div>
+
+        <a href="#about" class="scroll-down">
+          <span>Scroll to explore</span>
+          <i class="fa-solid fa-arrow-down"></i>
+        </a>
+      </section>
+
+      <!-- =========================
+         ABOUT
+    ========================== -->
+      <section class="section about" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label">01 — About</p>
+
+            <h2>
+              Turning ideas into
+              <span class="gradient-text">web experiences.</span>
+            </h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-text reveal">
+              <p class="large-text">
+                Detail-oriented Frontend Developer passionate about building
+                responsive, scalable, and engaging web applications.
+              </p>
+
+              <p>
+                I focus on clean UI, performance, usability, and delivering
+                reliable digital experiences through modern development
+                practices.
+              </p>
+
+              <div class="about-highlights">
+                <div class="highlight">
+                  <span class="highlight-number">01</span>
+                  <div>
+                    <h3>Clean UI</h3>
+                    <p>Simple and thoughtful interfaces.</p>
+                  </div>
+                </div>
+
+                <div class="highlight">
+                  <span class="highlight-number">02</span>
+                  <div>
+                    <h3>Responsive</h3>
+                    <p>Designed for every screen size.</p>
+                  </div>
+                </div>
+
+                <div class="highlight">
+                  <span class="highlight-number">03</span>
+                  <div>
+                    <h3>Performance</h3>
+                    <p>Fast and usable experiences.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-card reveal">
+              <div class="about-card-icon">
+                <i class="fa-solid fa-terminal"></i>
+              </div>
+
+              <p class="about-card-label">CURRENT FOCUS</p>
+
+              <h3>Frontend Development</h3>
+
+              <p>
+                Creating modern web interfaces with HTML, CSS, JavaScript and
+                modern UI tools.
+              </p>
+
+              <div class="mini-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>UI/UX</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+         SKILLS
+    ========================== -->
+      <section class="section skills-section" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label">02 — Skills</p>
+
+            <h2>
+              Tools I use to
+              <span class="gradient-text">build.</span>
+            </h2>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card reveal">
+              <div class="skill-icon">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <h3>HTML</h3>
+              <p>Semantic and accessible markup.</p>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-icon">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <h3>CSS</h3>
+              <p>Modern layouts and visual styling.</p>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-icon">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <h3>JavaScript</h3>
+              <p>Interactive and dynamic experiences.</p>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-icon">
+                <i class="fa-solid fa-wind"></i>
+              </div>
+              <h3>Tailwind CSS</h3>
+              <p>Utility-first responsive interfaces.</p>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-icon">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <h3>DaisyUI</h3>
+              <p>Reusable UI components.</p>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-icon">
+                <i class="fa-brands fa-git-alt"></i>
+              </div>
+              <h3>Git</h3>
+              <p>Version control and collaboration.</p>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <h3>Responsive Design</h3>
+              <p>Mobile-first responsive layouts.</p>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <h3>AI Tools</h3>
+              <p>AI-assisted development workflows.</p>
+            </div>
+          </div>
+
+          <div class="additional-tools reveal">
+            <p>Additional Tools</p>
+
+            <div class="tool-list">
+              <span>Jira</span>
+              <span>Figma</span>
+              <span>Google Workspace</span>
+              <span>Canva</span>
+              <span>MS Office</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+         EXPERIENCE
+    ========================== -->
+      <section class="section experience" id="experience">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label">03 — Experience</p>
+
+            <h2>
+              Where I've
+              <span class="gradient-text">worked.</span>
+            </h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+
+              <div class="timeline-date">October 2025 — January 2026</div>
+
+              <div class="timeline-content">
+                <div class="experience-header">
+                  <div>
+                    <h3>Associate</h3>
+                    <p>Acote Limited</p>
+                  </div>
+
+                  <span class="experience-type"> BPO </span>
+                </div>
+
+                <p>
+                  Supported daily BPO operations and business process tasks,
+                  collaborated with team members to complete assignments
+                  efficiently, and contributed to smooth workflow and service
+                  delivery.
+                </p>
+
+                <div class="experience-tags">
+                  <span>Operations</span>
+                  <span>Team Collaboration</span>
+                  <span>Workflow</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+         PROJECTS
+    ========================== -->
+      <section class="section projects" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label">04 — Projects</p>
+
+            <h2>
+              Selected work &
+              <span class="gradient-text">experiments.</span>
+            </h2>
+          </div>
+
+          <div class="projects-grid">
+            <!-- PROJECT 1 -->
+            <article class="project-card featured reveal">
+              <div class="project-number">01</div>
+
+              <div class="project-content">
+                <p class="project-category">Banking / Landing Page</p>
+
+                <h3>Bankist</h3>
+
+                <p>
+                  Modern banking landing page built with HTML, CSS, and
+                  JavaScript, featuring smooth scrolling, responsive UI,
+                  interactive navigation, modal windows, sliders, tabs, lazy
+                  loading, and dynamic interactions.
+                </p>
+
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://fahimnow.github.io/bankist/"
+                    class="project-link"
+                  >
+                    Live Demo
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+
+                  <a
+                    href="https://github.com/fahimnow/bankist"
+                    class="project-link secondary"
+                  >
+                    Code
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-decoration">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+            </article>
+
+            <!-- PROJECT 2 -->
+            <article class="project-card reveal">
+              <div class="project-number">02</div>
+
+              <div class="project-content">
+                <p class="project-category">Food / Responsive Website</p>
+
+                <h3>Fried Chicken</h3>
+
+                <p>
+                  Responsive food website built with HTML, CSS, and JavaScript.
+                  Includes modern UI, interactive elements and ScrollReveal
+                  animations.
+                </p>
+
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>ScrollReveal</span>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://fahimnow.github.io/responsive-fried-chicken-website/"
+                    class="project-link"
+                  >
+                    Live Demo
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+
+                  <a
+                    href="https://github.com/fahimnow/responsive-fried-chicken-website"
+                    class="project-link secondary"
+                  >
+                    Code
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-decoration">
+                <i class="fa-solid fa-burger"></i>
+              </div>
+            </article>
+
+            <!-- PROJECT 3 -->
+            <article class="project-card reveal">
+              <div class="project-number">03</div>
+
+              <div class="project-content">
+                <p class="project-category">Banking / Web App</p>
+
+                <h3>Payoo Mobile Banking</h3>
+
+                <p>
+                  Responsive banking application featuring Add Money, Cash Out,
+                  Money Transfer, Bill Payment, and Transaction History
+                  functionality.
+                </p>
+
+                <div class="project-tags">
+                  <span>JavaScript</span>
+                  <span>HTML</span>
+                  <span>Tailwind</span>
+                  <span>DaisyUI</span>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://fahimnow.github.io/payoo-mobile-app/"
+                    class="project-link"
+                  >
+                    Live Demo
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+
+                  <a
+                    href="https://github.com/fahimnow/payoo-mobile-app"
+                    class="project-link secondary"
+                  >
+                    Code
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-decoration">
+                <i class="fa-solid fa-wallet"></i>
+              </div>
+            </article>
+
+            <!-- PROJECT 4 -->
+            <article class="project-card reveal">
+              <div class="project-number">04</div>
+
+              <div class="project-content">
+                <p class="project-category">Education / API Project</p>
+
+                <h3>English Janala</h3>
+
+                <p>
+                  Interactive vocabulary learning platform using APIs to
+                  dynamically load lessons and vocabulary with search,
+                  vocabulary details, loading states, active lessons and Speech
+                  Synthesis.
+                </p>
+
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>Tailwind</span>
+                  <span>JavaScript</span>
+                  <span>API</span>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://fahimnow.github.io/english-janala/"
+                    class="project-link"
+                  >
+                    Live Demo
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+
+                  <a
+                    href="https://github.com/fahimnow/english-janala"
+                    class="project-link secondary"
+                  >
+                    Code
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-decoration">
+                <i class="fa-solid fa-language"></i>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+         EDUCATION
+    ========================== -->
+      <section class="section education" id="education">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label">05 — Education</p>
+
+            <h2>
+              My academic
+              <span class="gradient-text">journey.</span>
+            </h2>
+          </div>
+
+          <div class="education-card reveal">
+            <div class="education-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div class="education-info">
+              <span class="education-date"> 2020 — 2025 </span>
+
+              <h3>BSc in Computer Science & Engineering</h3>
+
+              <p class="major">Major: Information Systems</p>
+
+              <p>American International University-Bangladesh (AIUB)</p>
+
+              <div class="education-details">
+                <div>
+                  <span>CGPA</span>
+                  <strong>3.36 / 4.00</strong>
+                </div>
+
+                <div>
+                  <span>Certification</span>
+                  <strong>IT Essentials</strong>
+                </div>
+              </div>
+
+              <div class="thesis">
+                <span>THESIS</span>
+
+                <p>
+                  Enhancement of Ultrasound Image Resolution by the Use of
+                  Generative Adversarial Networks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+         CONTACT
+    ========================== -->
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-content reveal">
+              <p class="section-label">06 — Contact</p>
+
+              <h2>
+                Let's build something
+                <span class="gradient-text">great.</span>
+              </h2>
+
+              <p>
+                Have a project, opportunity, or idea you'd like to discuss? Feel
+                free to reach out.
+              </p>
+
+              <div class="contact-info">
+                <a href="mailto:fahimislam222@gmail.com" class="contact-item">
+                  <span class="contact-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                  </span>
+
+                  <div>
+                    <small>Email</small>
+                    <strong> fahimislam222@gmail.com </strong>
+                  </div>
+                </a>
+
+                <a href="tel:+8801707913491" class="contact-item">
+                  <span class="contact-icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </span>
+
+                  <div>
+                    <small>Phone</small>
+                    <strong> +880 170******** </strong>
+                  </div>
+                </a>
+
+                <div class="contact-item">
+                  <span class="contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </span>
+
+                  <div>
+                    <small>Location</small>
+                    <strong> Dhaka, Bangladesh </strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-wrapper reveal">
+              <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                  <label for="name"> Name </label>
+
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email"> Email </label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message"> Message </label>
+
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Tell me about your project..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary submit-btn">
+                  Send Message
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <p class="form-message" id="form-message"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+       FOOTER
+  ========================== -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <a href="#home" class="logo"> FAHIM<span>.</span> </a>
+
+        <p>Designed & built by MD. Fahim Islam</p>
+
+        <div class="footer-socials">
+          <a href="https://github.com/" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://linkedin.com/" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a href="mailto:fahimislam222@gmail.com">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
