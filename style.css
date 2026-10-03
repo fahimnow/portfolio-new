@@ -19,7 +19,7 @@
   --grid-line: rgba(150, 126, 255, 0.075);
   --gradient: linear-gradient(110deg, #347dff 5%, #6866ff 55%, #b45cff 100%);
   --container: 1180px;
-  --font-body: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
   --font-heading: 'Poppins', sans-serif;
   --transition: 0.3s ease;
 }
@@ -54,7 +54,7 @@ body.light-theme {
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
+  scroll-padding-top: 80px;
 }
 body {
   font-family: var(--font-body);
@@ -1262,6 +1262,9 @@ img {
   }
 }
 @media (max-width: 600px) {
+  html {
+    scroll-padding-top: 70px;
+  }
   .container {
     width: min(calc(100% - 28px), var(--container));
   }
@@ -1342,20 +1345,5 @@ img {
   }
   .footer-socials {
     justify-content: center;
-  }
-}
-/* =========================================================
-   REDUCED MOTION
-========================================================= */
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
   }
 }

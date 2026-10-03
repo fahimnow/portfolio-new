@@ -86,36 +86,31 @@ handleHeader();
    ACTIVE NAVIGATION
 ========================================================= */
 
-function updateActiveSection() {
-  const scrollPosition = window.scrollY + 150;
+const activeSectionObserver = new IntersectionObserver(
+  (entries) => {
+    const activeEntry = entries.find((entry) => entry.isIntersecting);
+    console.log(activeEntry);
 
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
+    if (!activeEntry) return;
 
-    const sectionHeight = section.offsetHeight;
+    const sectionId = activeEntry.target.id;
 
-    const sectionId = section.getAttribute('id');
+    navLinks.forEach((link) => {
+      link.classList.toggle(
+        'active',
+        link.getAttribute('href') === `#${sectionId}`,
+      );
+    });
+  },
+  {
+    rootMargin: '-20% 0px -70% 0px',
+    threshold: 0,
+  },
+);
 
-    if (
-      scrollPosition >= sectionTop &&
-      scrollPosition < sectionTop + sectionHeight
-    ) {
-      navLinks.forEach((link) => {
-        link.classList.remove('active');
-
-        const href = link.getAttribute('href');
-
-        if (href === `#${sectionId}`) {
-          link.classList.add('active');
-        }
-      });
-    }
-  });
-}
-
-window.addEventListener('scroll', updateActiveSection, { passive: true });
-
-updateActiveSection();
+sections.forEach((section) => {
+  activeSectionObserver.observe(section);
+});
 
 /* =========================================================
    SCROLL REVEAL
@@ -181,12 +176,10 @@ themeToggle.addEventListener('click', () => {
 ========================================================= */
 
 function handleBackToTop() {
-  if (window.scrollY > 500) {
-    backToTop.classList.add('show');
-  } else {
-    backToTop.classList.remove('show');
-  }
+  backToTop.classList.toggle('show', window.scrollY > 500);
 }
+
+// handleBackToTop();
 
 window.addEventListener('scroll', handleBackToTop, { passive: true });
 
@@ -229,30 +222,25 @@ contactForm.addEventListener('submit', (event) => {
    SMOOTH ANCHOR NAVIGATION
 ========================================================= */
 
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener('click', (event) => {
-    const targetId = anchor.getAttribute('href');
+navLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const targetId = link.getAttribute('href');
 
-    if (targetId === '#' || !targetId) {
-      return;
-    }
+    if (targetId === '#') return;
 
     const target = document.querySelector(targetId);
+    if (!target) return;
 
-    if (!target) {
-      return;
-    }
+    // const headerHeight = header.offsetHeight;
+    // window.scrollTo({
+    //   top: target.offsetTop - headerHeight,
+    //   behavior: 'smooth',
+    // });
 
-    event.preventDefault();
-
-    const headerHeight = header.offsetHeight;
-
-    const targetPosition = target.offsetTop - headerHeight;
-
-    window.scrollTo({
-      top: targetPosition,
-
+    target.scrollIntoView({
       behavior: 'smooth',
+      block: 'start',
     });
 
     history.pushState(null, '', targetId);
